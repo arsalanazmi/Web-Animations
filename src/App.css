@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+body {
+  background-color: rgb(237, 247, 250);
+  overflow: hidden;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+  overflow: hidden;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.clouds-div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+}
+#cloud1 {
+  width: 20%;
+}
+#cloud2 {
+  width: 40%;
+}
+.birds-div {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  bottom: 100px;
+  z-index: 998;
+}
+#bird1 {
+  width: 8%;
+  z-index: 998;
+}
+#bird2 {
+  z-index: 998;
+  width: 10%;
+}
+.road-div {
+  width: 100% !important;
+  position: absolute;
+  bottom: 0;
+  z-index: -1 !important;
+}
+#road {
+  width: 100% !important;
+  height: 50vh;
+  position: absolute;
+  bottom: 0;
+}
+#car {
+  width: 27% !important;
+}
+.car-div {
+  position: absolute;
+  top: 78%;
+  z-index: 999 !important;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 600px) {
+  #car {
+    width: 45% !important;
   }
-  to {
-    transform: rotate(360deg);
+  #cloud1 {
+    width: 40%;
+  }
+  #cloud2 {
+    width: 65%;
+  }
+  .birds-div {
+    position: relative;
+    bottom: 70px;
+  }
+  #bird1 {
+    width: 20%;
+  }
+  #bird2 {
+    width: 23%;
   }
 }
