@@ -43,4 +43,4 @@ jobs:
       
     # Deploy Surge
     - name: Deploy on Surge
-      run: surge web_animations.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      run: surge ./build web_animations.surge.sh --token ${{ secrets.SURGE_TOKEN }}
